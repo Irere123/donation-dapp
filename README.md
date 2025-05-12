@@ -17,13 +17,13 @@ A decentralized application built with Hardhat, Ethers.js, and React that allows
 │   └── Donation.sol     # Main donation contract
 ├── scripts/             # Deployment scripts
 │   └── deploy.js        # Script to deploy the contract
-├── frontend/            # React frontend
+├── client/            # React frontend
 │   ├── public/          # Static files
 │   └── src/             # React source code
 │       ├── components/  # React components
 │       └── artifacts/   # Contract ABIs (generated after compilation)
 ├── hardhat.config.js    # Hardhat configuration
-└── .env-example         # Example environment variables
+└── .env.example         # Example environment variables
 ```
 
 ## Prerequisites
@@ -42,9 +42,9 @@ A decentralized application built with Hardhat, Ethers.js, and React that allows
 
 2. Install dependencies:
    ```
-   npm install
-   cd frontend
-   npm install
+   pnpm install
+   cd client
+   pnpm install
    ```
 
 3. Create a `.env` file in the root directory:
@@ -68,15 +68,15 @@ A decentralized application built with Hardhat, Ethers.js, and React that allows
    npx hardhat run scripts/deploy.js --network sepolia
    ```
 
-7. Update the contract address in `frontend/src/App.js`:
+7. Update the contract address in `client/src/App.tsx`:
    ```javascript
    const contractAddress = 'DEPLOYED_CONTRACT_ADDRESS';
    ```
 
 8. Start the React development server:
    ```
-   cd frontend
-   npm start
+   cd client
+   pnpm dev
    ```
 
 9. Open your browser and navigate to `http://localhost:3000`

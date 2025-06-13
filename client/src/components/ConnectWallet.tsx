@@ -18,7 +18,8 @@ const ConnectWallet = ({
   };
 
   return (
-    <div className="flex items-center space-x-4">
+    <div className="flex flex-col items-center space-x-4">
+      <p>Account</p>
       {account ? (
         <div className="flex items-center bg-white bg-opacity-20 rounded-lg p-2 shadow-sm">
           <div className="mr-3">

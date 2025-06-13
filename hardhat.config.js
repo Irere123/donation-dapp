@@ -7,11 +7,11 @@ module.exports = {
   networks: {
     sepolia: {
       url: process.env.SEPOLIA_RPC_URL || "",
-      accounts: 
+      accounts:
         process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
   },
   paths: {
     artifacts: "./client/src/artifacts",
   },
-}; 
+};

@@ -151,9 +151,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-100">
-      <header className="bg-gradient-to-r from-purple-600 to-blue-500 text-white p-6 shadow-md">
+      <header className="bg-gradient-to-r p-6">
         <div className="container mx-auto flex items-center justify-between">
-          <h1 className="text-3xl font-bold">Donation dApp</h1>
           <ConnectWallet
             account={account}
             balance={balance}
@@ -183,12 +182,6 @@ function App() {
           </div>
         )}
       </main>
-
-      <footer className="bg-gray-800 text-white p-6">
-        <div className="container mx-auto text-center">
-          <p>© 2023 Donation dApp - Built with Hardhat, Ethers.js, and React</p>
-        </div>
-      </footer>
     </div>
   );
 }
